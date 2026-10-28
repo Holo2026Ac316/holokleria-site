@@ -1,0 +1,22 @@
+# Send common capitalizations of the book URL to the canonical lowercase page.
+# 301 = permanent redirect. The trailing-slash version is served directly by
+# the folder's index.html, so it needs no rule here.
+
+/TooManyPills      /toomanypills   301
+/TooManyPills/     /toomanypills   301
+/Toomanypills      /toomanypills   301
+/Toomanypills/     /toomanypills   301
+/TOOMANYPILLS      /toomanypills   301
+/TOOMANYPILLS/     /toomanypills   301
+
+/Prediabetes       /prediabetes    301
+/Prediabetes/      /prediabetes    301
+/PreDiabetes       /prediabetes    301
+/PreDiabetes/      /prediabetes    301
+/PREDIABETES       /prediabetes    301
+/PREDIABETES/      /prediabetes    301
+
+/Resources         /resources      301
+/Resources/        /resources      301
+/RESOURCES         /resources      301
+/RESOURCES/        /resources      301

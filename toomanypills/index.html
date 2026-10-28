@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Too Many Pills? Free Printable Tools | Holokleria</title>
+  <meta name="description" content="Too Many Pills? Free Printable Tools | Holokleria">
+  <meta property="og:title" content="Too Many Pills? Free Printable Tools | Holokleria">
+  <meta property="og:description" content="Too Many Pills? Free Printable Tools | Holokleria">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #1B3A5C;
+      --gold: #C8960C;
+      --slate: #4A6FA5;
+      --white: #FFFFFF;
+      --light-gray: #F2F5FA;
+      --text-body: #2b3744;
+      --text-muted: #51606f;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--text-body);
+      background: var(--white);
+      line-height: 1.7;
+      font-size: 19px;
+      font-weight: 400;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Playfair Display', Georgia, serif;
+      color: var(--navy);
+      line-height: 1.2;
+      font-weight: 600;
+    }
+
+    a {
+      color: var(--slate);
+    }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 3px solid var(--gold);
+      outline-offset: 3px;
+      border-radius: 3px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ---------- HEADER ---------- */
+    .site-header {
+      background: var(--navy);
+      text-align: center;
+      padding: 28px 0;
+    }
+
+    .site-header .brand {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--white);
+      text-decoration: none;
+      letter-spacing: 0.01em;
+    }
+
+    .site-header .brand:hover {
+      color: var(--gold);
+    }
+
+    .gold-rule {
+      width: 84px;
+      height: 3px;
+      background: var(--gold);
+      border: none;
+      margin: 24px auto 0;
+    }
+
+    /* ---------- HERO ---------- */
+    .hero {
+      text-align: center;
+      padding: 56px 0 8px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2rem, 6vw, 2.8rem);
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      margin-bottom: 24px;
+    }
+
+    .hero .intro {
+      font-size: 1.1rem;
+      color: var(--text-body);
+      max-width: 620px;
+      margin: 0 auto 16px;
+    }
+
+    .hero .intro em {
+      font-style: italic;
+    }
+
+    /* ---------- MAIN ---------- */
+    main {
+      padding: 32px 0 16px;
+    }
+
+    .section-block {
+      margin: 40px 0;
+    }
+
+    .section-block h2 {
+      font-size: 1.6rem;
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--gold);
+    }
+
+    p {
+      margin-bottom: 18px;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* ---------- DOWNLOAD AREA ---------- */
+    .download-area {
+      background: var(--light-gray);
+      border: 1px solid #dde4ee;
+      border-radius: 10px;
+      padding: 36px 28px;
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .btn-download {
+      display: block;
+      width: 100%;
+      max-width: 460px;
+      margin: 0 auto;
+      min-height: 60px;
+      background: var(--navy);
+      color: var(--white);
+      font-family: 'Inter', sans-serif;
+      font-size: 1.18rem;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 6px;
+      padding: 17px 24px;
+      transition: background 0.2s ease, color 0.2s ease;
+    }
+
+    .btn-download:hover {
+      background: var(--gold);
+      color: var(--navy);
+    }
+
+    .view-link {
+      display: inline-block;
+      margin-top: 20px;
+      font-size: 1.05rem;
+      color: var(--slate);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      font-weight: 500;
+      min-height: 44px;
+      line-height: 44px;
+    }
+
+    .view-link:hover {
+      color: var(--gold);
+    }
+
+    /* ---------- CONTENTS LIST ---------- */
+    ol.contents {
+      list-style-position: outside;
+      padding-left: 1.4em;
+    }
+
+    ol.contents li {
+      margin-bottom: 9px;
+      padding-left: 4px;
+    }
+
+    /* ---------- CALLOUT ---------- */
+    .callout {
+      background: #fbf6e9;
+      border-left: 4px solid var(--gold);
+      border-radius: 4px;
+      padding: 20px 22px;
+      margin: 32px 0;
+    }
+
+    .permission {
+      font-weight: 600;
+      color: var(--navy);
+    }
+
+    /* ---------- DISCLAIMER ---------- */
+    .disclaimer {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+      margin: 32px 0 8px;
+    }
+
+    .updated {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-top: 16px;
+    }
+
+    /* ---------- FOOTER ---------- */
+    footer {
+      background: #15314d;
+      border-top: 2px solid var(--gold);
+      text-align: center;
+      padding: 30px 0;
+      margin-top: 48px;
+    }
+
+    footer p {
+      color: #c3d0e0;
+      font-size: 0.9rem;
+      margin: 0;
+    }
+
+    @media (max-width: 600px) {
+      body { font-size: 18px; }
+      .hero { padding: 40px 0 4px; }
+      .download-area { padding: 28px 20px; }
+      .btn-download { font-size: 1.08rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="/" class="brand">Holokleria</a>
+    <hr class="gold-rule">
+  </header>
+
+  <div class="hero">
+    <div class="container">
+      <h1>Too Many Pills? Your Tools in One Place</h1>
+      <p class="intro">Free printable tools from <em>Too Many Pills? A Nurse Practitioner's Guide to Medication Safety for Older Adults and the Families Who Help Them</em>, by Jonathan Crowell, MSN, APRN, FNP-C.</p>
+      <p class="intro">Every tool in the book is gathered in one PDF, ready to print. No sign-up needed.</p>
+    </div>
+  </div>
+
+  <main>
+    <div class="container">
+
+      <div class="download-area">
+        <a class="btn-download" href="too-many-pills-tools.pdf" download>Download the tools (PDF, 21 pages)</a>
+        <a class="view-link" href="too-many-pills-tools.pdf" target="_blank" rel="noopener">Open the PDF to view or print</a>
+      </div>
+
+      <div class="section-block">
+        <h2>What's inside</h2>
+        <ol class="contents">
+          <li>My complete medicine list</li>
+          <li>Change log</li>
+          <li>Questions for the whole list</li>
+          <li>Medicine notebook: what I've noticed</li>
+          <li>High-alert medicine safety plan</li>
+          <li>The question card</li>
+          <li>New medicine page</li>
+          <li>Brown-bag review checklist</li>
+          <li>My trial plan</li>
+          <li>Change tracker</li>
+          <li>Five links and the Medicine Year</li>
+          <li>Hospital stay: the three-list check</li>
+          <li>What Matters Now</li>
+          <li>When memory is changing</li>
+          <li>Your records: a quick reference</li>
+        </ol>
+      </div>
+
+      <div class="section-block">
+        <h2>How to use them</h2>
+        <p>Keep one set for each person whose medicines you keep track of. If you help two people, keep two. You don't need every page. Start with the complete medicine list and keep it in front, with a log of changes behind it. Add other pages only when a problem or a change calls for them. Each tool is explained in the book, in the chapter listed beside it. The contents page in the PDF shows where each tool starts, so you can print just the pages you need.</p>
+
+        <p class="permission">You may print or photocopy these pages for your own use or for someone you help.</p>
+
+        <div class="callout">
+          <p style="margin-bottom:0;">One rule runs through all of them: these pages help you notice, ask, and plan. None of them is a reason to stop or change a prescription medicine on your own.</p>
+        </div>
+      </div>
+
+      <p class="disclaimer">These pages offer general information about medicines and older adults. They are not medical advice for any one person and do not replace the care of a clinician or pharmacist who knows your history. Never stop or change a prescription medicine on your own because of something you read here.</p>
+
+      <p class="updated">Updated October 2026.</p>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Holokleria LLC. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Holokleria LLC</title>
+  <meta name="description" content="Holokleria LLC is a Tennessee Limited Liability Company providing clinical, health, and faith-based education through FullScope Nursing CE, Dust to Divinity, and Matheteuo Ministries.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #1B3A5C;
+      --gold: #C8960C;
+      --slate: #4A6FA5;
+      --white: #FFFFFF;
+      --light-gray: #F2F5FA;
+      --text-body: #33414f;
+      --text-muted: #5d6b7a;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--text-body);
+      background: var(--white);
+      line-height: 1.7;
+      font-weight: 400;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Playfair Display', Georgia, serif;
+      color: var(--navy);
+      line-height: 1.2;
+      font-weight: 600;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 28px;
+    }
+
+    .section {
+      padding: 88px 0;
+    }
+
+    .section-heading {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 16px;
+      letter-spacing: -0.01em;
+    }
+
+    .section-intro {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    /* ---------- HERO ---------- */
+    .hero {
+      text-align: center;
+      padding: 120px 0 100px;
+      background: var(--white);
+    }
+
+    .hero h1 {
+      font-size: clamp(2.8rem, 7vw, 4.4rem);
+      font-weight: 700;
+      letter-spacing: -0.015em;
+      margin-bottom: 14px;
+    }
+
+    .hero .greek {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: clamp(1.3rem, 3.5vw, 1.85rem);
+      color: var(--gold);
+      font-weight: 500;
+      margin-bottom: 28px;
+      letter-spacing: 0.01em;
+    }
+
+    .hero .tagline {
+      font-size: 1.12rem;
+      color: var(--text-muted);
+      max-width: 620px;
+      margin: 0 auto 32px;
+      font-weight: 400;
+    }
+
+    .gold-rule {
+      width: 84px;
+      height: 2px;
+      background: var(--gold);
+      border: none;
+      margin: 0 auto;
+    }
+
+    /* ---------- ABOUT ---------- */
+    .about {
+      background: var(--light-gray);
+    }
+
+    .about p {
+      max-width: 760px;
+      margin: 0 auto 22px;
+      text-align: center;
+      font-size: 1.05rem;
+    }
+
+    .about p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* ---------- DIVISIONS ---------- */
+    .divisions-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 26px;
+      margin-top: 52px;
+    }
+
+    .card {
+      background: var(--white);
+      border: 1px solid #e3e9f2;
+      border-top: 4px solid var(--gold);
+      border-radius: 6px;
+      padding: 34px 28px 30px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 2px 10px rgba(27, 58, 92, 0.04);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 28px rgba(27, 58, 92, 0.10);
+    }
+
+    .card h3 {
+      font-size: 1.35rem;
+      margin-bottom: 14px;
+    }
+
+    .card p {
+      font-size: 0.96rem;
+      color: var(--text-muted);
+      flex-grow: 1;
+      margin-bottom: 26px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--navy);
+      color: var(--white);
+      text-decoration: none;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      padding: 11px 22px;
+      border-radius: 4px;
+      text-align: center;
+      align-self: flex-start;
+      transition: background 0.22s ease, color 0.22s ease;
+    }
+
+    .btn:hover {
+      background: var(--gold);
+      color: var(--navy);
+    }
+
+    .card.coming-soon {
+      border-top-color: #cfd8e6;
+      background: #fafbfd;
+      opacity: 0.92;
+    }
+
+    .card.coming-soon h3 {
+      color: var(--slate);
+    }
+
+    .badge {
+      display: inline-block;
+      align-self: flex-start;
+      background: var(--gold);
+      color: var(--white);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      border-radius: 999px;
+    }
+
+    /* ---------- RESOURCES STRIP ---------- */
+    .resources {
+      background: var(--white);
+      border-top: 1px solid #e3e9f2;
+      border-bottom: 1px solid #e3e9f2;
+      padding: 40px 0;
+    }
+
+    .resources .container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 8px 16px;
+      text-align: center;
+    }
+
+    .resources .label {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem;
+      color: var(--navy);
+      font-weight: 600;
+    }
+
+    .resources a {
+      font-size: 1rem;
+      color: var(--slate);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+
+    .resources a:hover {
+      color: var(--gold);
+    }
+
+    .resources a:focus-visible {
+      outline: 2px solid var(--gold);
+      outline-offset: 3px;
+      border-radius: 2px;
+    }
+
+    /* ---------- LEADERSHIP ---------- */
+    .leadership {
+      background: var(--light-gray);
+    }
+
+    .leader-panel {
+      background: var(--white);
+      border: 1px solid #e3e9f2;
+      border-radius: 8px;
+      max-width: 660px;
+      margin: 48px auto 0;
+      padding: 44px 40px;
+      text-align: center;
+      box-shadow: 0 2px 14px rgba(27, 58, 92, 0.05);
+    }
+
+    .leader-panel .name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.7rem;
+      font-weight: 600;
+      color: var(--navy);
+      margin-bottom: 10px;
+    }
+
+    .leader-panel .creds {
+      font-size: 0.92rem;
+      color: var(--gold);
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      margin-bottom: 22px;
+    }
+
+    .leader-panel .bio {
+      font-size: 1.02rem;
+      color: var(--text-muted);
+      max-width: 520px;
+      margin: 0 auto;
+    }
+
+    /* ---------- CONTACT ---------- */
+    .contact {
+      background: var(--navy);
+      text-align: center;
+    }
+
+    .contact h2 {
+      color: var(--white);
+    }
+
+    .contact .email {
+      display: inline-block;
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.5rem, 4vw, 2.1rem);
+      color: var(--gold);
+      text-decoration: none;
+      margin: 24px 0 14px;
+      transition: opacity 0.2s ease;
+    }
+
+    .contact .email:hover {
+      opacity: 0.82;
+    }
+
+    .contact .note {
+      color: #c3d0e0;
+      font-size: 1rem;
+    }
+
+    /* ---------- FOOTER ---------- */
+    footer {
+      background: #15314d;
+      border-top: 2px solid var(--gold);
+      text-align: center;
+      padding: 34px 0;
+    }
+
+    footer p {
+      color: #b9c6d6;
+      font-size: 0.82rem;
+      letter-spacing: 0.02em;
+      margin: 0;
+    }
+
+    footer p + p {
+      margin-top: 6px;
+      color: #8ea2b8;
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 860px) {
+      .divisions-grid {
+        grid-template-columns: 1fr;
+        max-width: 460px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .section {
+        padding: 64px 0;
+      }
+      .hero {
+        padding: 88px 0 72px;
+      }
+      .leader-panel {
+        padding: 34px 26px;
+      }
+      .btn {
+        align-self: stretch;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container">
+      <h1>Holokleria LLC</h1>
+      <p class="greek">ὁλοκληρία</p>
+      <p class="tagline">Education that brings completeness — across clinical, health, and faith disciplines.</p>
+      <hr class="gold-rule">
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section class="section about">
+    <div class="container">
+      <h2 class="section-heading">About Holokleria</h2>
+      <p>Holokleria LLC is a Tennessee Limited Liability Company providing education across three distinct disciplines through dedicated brand divisions. Our mission is grounded in the conviction that genuine education — clinical, personal, and spiritual — moves people toward wholeness and maturity in their field and in their lives.</p>
+      <p>All educational products, continuing education courses, and content platforms operated by Holokleria LLC are developed with evidence-based rigor, professional integrity, and a commitment to the whole person.</p>
+    </div>
+  </section>
+
+  <!-- DIVISIONS -->
+  <section class="section divisions">
+    <div class="container">
+      <h2 class="section-heading">Our Divisions</h2>
+      <div class="divisions-grid">
+
+        <div class="card">
+          <h3>FullScope Nursing CE</h3>
+          <p>Accredited continuing education for licensed practical nurses, registered nurses, and advanced practice registered nurses, developed by a practicing FNP-C with full practice authority.</p>
+          <a href="#" class="btn">Visit Site</a>
+        </div>
+
+        <div class="card">
+          <h3>Dust to Divinity</h3>
+          <p>Consumer health education, supplement science, and whole-person wellness content for the general public — where clinical truth meets everyday life.</p>
+          <a href="#" class="btn">Visit Site</a>
+        </div>
+
+        <div class="card">
+          <h3>Matheteuo Ministries</h3>
+          <p>Christian discipleship education, Bible study resources, and faith formation content rooted in the call to make mature disciples.</p>
+          <a href="#" class="btn">Visit Site</a>
+        </div>
+
+        <div class="card coming-soon">
+          <h3>Full Scope Practice</h3>
+          <p>Continuing medical education and professional development for physician assistants and medical doctors — expanding the scope of evidence-based clinical education.</p>
+          <span class="badge">Coming Soon</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FREE RESOURCES -->
+  <section class="resources">
+    <div class="container">
+      <span class="label">Free Resources</span>
+      <a href="/resources">Free printable tools and guides from our books</a>
+    </div>
+  </section>
+
+  <!-- LEADERSHIP -->
+  <section class="section leadership">
+    <div class="container">
+      <h2 class="section-heading">Leadership</h2>
+      <div class="leader-panel">
+        <p class="name">Jonathan Crowell, FNP-C</p>
+        <p class="creds">Family Nurse Practitioner — Certified | Master of Divinity</p>
+        <p class="bio">Jonathan Crowell is a board-certified Family Nurse Practitioner with experience in collegiate nursing education, Emergency Department nursing, Intensive Care nursing, Psychiatric and Mental Health nursing, Community Health nursing, medical missions, and faith-integrated care. He is the founder and sole member of Holokleria LLC and serves as Nurse Planner for FullScope Nursing CE. He is a member of the International Board of Trustees for the Volta Bible College. He is also the West Africa Coordinator for the World Bible Institute serving as an instructor, medical missions director, and partner to the DzoDze Ghana Mission Hospital.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact">
+    <div class="container">
+      <h2 class="section-heading">Contact</h2>
+      <a href="mailto:info@holokleria.net" class="email">info@holokleria.net</a>
+      <p class="note">For partnership inquiries, accreditation matters, or general correspondence.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>© 2025 Holokleria LLC. All rights reserved.</p>
+      <p>A Tennessee Limited Liability Company</p>
+    </div>
+  </footer>
+
+</body>
+</html>

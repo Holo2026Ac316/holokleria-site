@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Resources | Holokleria</title>
+  <meta name="description" content="Free printable tools and guides from the books of Holokleria LLC.">
+  <meta property="og:title" content="Free Resources | Holokleria">
+  <meta property="og:description" content="Free printable tools and guides from the books of Holokleria LLC.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #1B3A5C;
+      --gold: #C8960C;
+      --slate: #4A6FA5;
+      --white: #FFFFFF;
+      --light-gray: #F2F5FA;
+      --text-body: #2b3744;
+      --text-muted: #51606f;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--text-body);
+      background: var(--white);
+      line-height: 1.7;
+      font-size: 19px;
+      font-weight: 400;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Playfair Display', Georgia, serif;
+      color: var(--navy);
+      line-height: 1.2;
+      font-weight: 600;
+    }
+
+    a {
+      color: var(--slate);
+    }
+
+    a:focus-visible {
+      outline: 3px solid var(--gold);
+      outline-offset: 3px;
+      border-radius: 3px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ---------- HEADER ---------- */
+    .site-header {
+      background: var(--navy);
+      text-align: center;
+      padding: 28px 0;
+    }
+
+    .site-header .brand {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--white);
+      text-decoration: none;
+      letter-spacing: 0.01em;
+    }
+
+    .site-header .brand:hover {
+      color: var(--gold);
+    }
+
+    .gold-rule {
+      width: 84px;
+      height: 3px;
+      background: var(--gold);
+      border: none;
+      margin: 24px auto 0;
+    }
+
+    /* ---------- HERO ---------- */
+    .hero {
+      text-align: center;
+      padding: 56px 0 24px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2rem, 6vw, 2.8rem);
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      margin-bottom: 20px;
+    }
+
+    .hero .intro {
+      font-size: 1.1rem;
+      color: var(--text-body);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* ---------- RESOURCE CARDS ---------- */
+    main {
+      padding: 16px 0 24px;
+    }
+
+    .resource-card {
+      background: var(--white);
+      border: 1px solid #e3e9f2;
+      border-top: 4px solid var(--gold);
+      border-radius: 8px;
+      padding: 30px 28px;
+      margin-bottom: 26px;
+      box-shadow: 0 2px 10px rgba(27, 58, 92, 0.04);
+    }
+
+    .resource-card h2 {
+      font-size: 1.45rem;
+      margin-bottom: 6px;
+    }
+
+    .resource-card .book {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      font-style: italic;
+      margin-bottom: 14px;
+    }
+
+    .resource-card p.desc {
+      font-size: 1.02rem;
+      color: var(--text-body);
+      margin-bottom: 22px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--navy);
+      color: var(--white);
+      text-decoration: none;
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+      padding: 13px 26px;
+      border-radius: 6px;
+      min-height: 48px;
+      transition: background 0.2s ease, color 0.2s ease;
+    }
+
+    .btn:hover {
+      background: var(--gold);
+      color: var(--navy);
+    }
+
+    .btn:focus-visible {
+      outline: 3px solid var(--gold);
+      outline-offset: 3px;
+    }
+
+    /* ---------- FOOTER ---------- */
+    footer {
+      background: #15314d;
+      border-top: 2px solid var(--gold);
+      text-align: center;
+      padding: 30px 0;
+      margin-top: 40px;
+    }
+
+    footer p {
+      color: #c3d0e0;
+      font-size: 0.9rem;
+      margin: 0 0 8px;
+    }
+
+    footer p:last-child {
+      margin-bottom: 0;
+    }
+
+    footer a {
+      color: #e7c877;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    @media (max-width: 600px) {
+      body { font-size: 18px; }
+      .hero { padding: 40px 0 16px; }
+      .btn { display: block; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="/" class="brand">Holokleria</a>
+    <hr class="gold-rule">
+  </header>
+
+  <div class="hero">
+    <div class="container">
+      <h1>Free Resources</h1>
+      <p class="intro">Printable tools and guides from our books, gathered here so you can find them in one place. Each is free to print, with no sign-up needed.</p>
+    </div>
+  </div>
+
+  <main>
+    <div class="container">
+
+      <div class="resource-card">
+        <h2>Too Many Pills? Your Tools in One Place</h2>
+        <p class="book">From <em>Too Many Pills? A Nurse Practitioner's Guide to Medication Safety for Older Adults and the Families Who Help Them</em></p>
+        <p class="desc">Every tool in the book, gathered in one printable PDF: a complete medicine list, a change log, questions for your clinician, a brown-bag review checklist, and more.</p>
+        <a class="btn" href="/toomanypills">Open these tools</a>
+      </div>
+
+      <div class="resource-card">
+        <h2>Anchor Meals</h2>
+        <p class="book">From <em>You Have Prediabetes. Now What? A Nurse Practitioner's Field Guide to What Comes Next</em></p>
+        <p class="desc">Twelve printable meals for one or two, a sample week that shows how they fit together, blank pages to plan your own, and a shopping list. Ready to print.</p>
+        <a class="btn" href="/prediabetes">Open these meals</a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p><a href="/">Back to Holokleria</a></p>
+      <p>&copy; 2026 Holokleria LLC. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
