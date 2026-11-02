@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FullScope Nursing CE | Holokleria</title>
+  <meta name="description" content="FullScope Nursing CE, a division of Holokleria LLC.">
+  <meta property="og:title" content="FullScope Nursing CE | Holokleria">
+  <meta property="og:description" content="FullScope Nursing CE, a division of Holokleria LLC.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #1B3A5C;
+      --gold: #C8960C;
+      --slate: #4A6FA5;
+      --white: #FFFFFF;
+      --light-gray: #F2F5FA;
+      --text-body: #2b3744;
+      --text-muted: #51606f;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--text-body);
+      background: var(--white);
+      line-height: 1.7;
+      font-size: 18px;
+      font-weight: 400;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Playfair Display', Georgia, serif;
+      color: var(--navy);
+      line-height: 1.2;
+      font-weight: 600;
+    }
+
+    a { color: var(--slate); }
+
+    a:focus-visible {
+      outline: 3px solid var(--gold);
+      outline-offset: 3px;
+      border-radius: 3px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ---------- HEADER ---------- */
+    .site-header {
+      background: var(--navy);
+      text-align: center;
+      padding: 28px 0;
+    }
+
+    .site-header .brand {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--white);
+      text-decoration: none;
+      letter-spacing: 0.01em;
+    }
+
+    .site-header .brand:hover { color: var(--gold); }
+
+    .gold-rule {
+      width: 84px;
+      height: 3px;
+      background: var(--gold);
+      border: none;
+      margin: 24px auto 0;
+    }
+
+    /* ---------- HERO ---------- */
+    .hero {
+      text-align: center;
+      padding: 60px 0 16px;
+    }
+
+    .hero .eyebrow {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 16px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.1rem, 6vw, 3rem);
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      margin-bottom: 20px;
+    }
+
+    .hero .intro {
+      font-size: 1.12rem;
+      color: var(--text-muted);
+      max-width: 620px;
+      margin: 0 auto;
+    }
+
+    /* ---------- VIDEOS ---------- */
+    main { padding: 40px 0 24px; }
+
+    .videos h2 {
+      font-size: 1.5rem;
+      text-align: center;
+      margin-bottom: 28px;
+    }
+
+    .video-placeholder {
+      background: var(--light-gray);
+      border: 1px solid #dde4ee;
+      border-radius: 12px;
+      padding: 64px 28px;
+      text-align: center;
+      max-width: 620px;
+      margin: 0 auto;
+    }
+
+    .play-badge {
+      width: 76px;
+      height: 76px;
+      margin: 0 auto 24px;
+      background: var(--white);
+      border: 2px solid var(--gold);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 14px rgba(27, 58, 92, 0.08);
+    }
+
+    .play-badge svg { width: 30px; height: 30px; margin-left: 4px; }
+
+    .ph-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      color: var(--navy);
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .ph-sub {
+      font-size: 1.02rem;
+      color: var(--text-muted);
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    /* ---------- FOOTER ---------- */
+    footer {
+      background: #15314d;
+      border-top: 2px solid var(--gold);
+      text-align: center;
+      padding: 30px 0;
+      margin-top: 52px;
+    }
+
+    footer p { color: #c3d0e0; font-size: 0.9rem; margin: 0 0 8px; }
+    footer p:last-child { margin-bottom: 0; }
+    footer a { color: #e7c877; text-decoration: underline; text-underline-offset: 2px; }
+
+    @media (max-width: 600px) {
+      .hero { padding: 44px 0 10px; }
+      .video-placeholder { padding: 48px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="/" class="brand">Holokleria</a>
+    <hr class="gold-rule">
+  </header>
+
+  <div class="hero">
+    <div class="container">
+      <p class="eyebrow">A division of Holokleria LLC</p>
+      <h1>FullScope Nursing CE</h1>
+      <p class="intro">Accredited continuing education for licensed practical nurses, registered nurses, and advanced practice registered nurses, developed by a practicing FNP-C with full practice authority.</p>
+    </div>
+  </div>
+
+  <main>
+    <div class="container">
+      <section class="videos">
+        <h2>Latest videos</h2>
+        <div class="video-placeholder">
+          <div class="play-badge" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="#C8960C" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 5v14l11-7z"></path>
+            </svg>
+          </div>
+          <p class="ph-title">Videos coming soon</p>
+          <p class="ph-sub">We are putting this channel together. Check back soon to watch the latest here.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p><a href="/">Back to Holokleria</a></p>
+      <p>&copy; 2026 Holokleria LLC. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
